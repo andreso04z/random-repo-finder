@@ -15,4 +15,5 @@ export function toggleDropdown() {
         return;
     }
     dropdownButton.addEventListener('click', () => toggle(dropdownButton, dropdownMenu, svgPath));
+    dropdownMenu.addEventListener('click', () => toggle(dropdownButton, dropdownMenu, svgPath));
 }
