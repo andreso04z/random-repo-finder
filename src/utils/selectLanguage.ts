@@ -31,6 +31,9 @@ export function selectLanguage() {
     menuDiv.addEventListener('click', async (e) => {
         const target = e.target as HTMLElement;
         if (!target || !target.textContent) return;
+        if (target.childElementCount > 1) {
+            return;
+        }
 
         const selectedLanguage = getSelectedLanguage(target);
         updateButtonText(dropdownButton, selectedLanguage);

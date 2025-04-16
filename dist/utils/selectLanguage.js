@@ -23,6 +23,9 @@ export function selectLanguage() {
         const target = e.target;
         if (!target || !target.textContent)
             return;
+        if (target.childElementCount > 1) {
+            return;
+        }
         const selectedLanguage = getSelectedLanguage(target);
         updateButtonText(dropdownButton, selectedLanguage);
         const fullResponse = await fetchRepositoryByLanguage(getSelectedLanguage(target));
