@@ -1,0 +1,35 @@
+<div id="repository-container" class="flex flex-col gap-4">
+    <div class="h-48 w-86 bg-gray-200 rounded-2xl flex flex-col justify-center items-center shadow-md p-3 text-gray-700">
+        <h1>Please select a language</h1>
+    </div>
+</div>
+
+<div id="repository-container" class="flex flex-col gap-4">
+    <div class="h-48 w-86 bg-gray-200 rounded-2xl flex flex-col justify-center items-center shadow-md p-3 text-gray-700">
+        <h1>Loading...</h1>
+    </div>
+</div>
+
+<div id="repository-container" class="flex flex-col gap-4">
+    <div class="h-48 w-86 bg-red-200 rounded-2xl flex flex-col justify-center items-center shadow-md p-3 text-gray-800">
+        <h1>Error fetching repositories</h1>
+    </div>
+    <button class="h-12 w-86 bg-red-500 rounded-2xl text-white shadow-md cursor-pointer hover:bg-red-700 ">
+        <h1>Click to retry</h1>
+    </button>
+</div>
+
+<div id="repository-container" class="flex flex-col gap-4">
+    <div class="w-86 border gap-4 border-gray-300 bg-white rounded-2xl flex flex-col shadow-md p-3 text-gray-700">
+        <h1 id="repository-name" class="text-black font-semibold">Repository Name</h1>
+        <p id="repository-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab quae adipisci, totam odio quasi. Eos et quos veniam consequatur at magnam tenetur vitae dolorem qui, consectetur cumque id enim!</p>
+        <div id="repository-footer" class="flex justify-around">
+            <p id="repository-language">Language</p>
+            <p id="repository-stars">Stars</p>
+            <p id="repository-forks">Forks</p>
+        </div>
+    </div>
+    <button class="h-12 w-86 bg-blue-600 rounded-2xl text-white shadow-md cursor-pointer hover:bg-blue-700 ">
+        <h1>Refresh</h1>
+    </button>
+</div>

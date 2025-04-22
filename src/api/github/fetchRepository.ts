@@ -22,6 +22,5 @@ export async function fetchRepositoryByLanguage(language: string): Promise<Repos
     } catch(error) {
         console.error("Error fetching GitHub repositories:", error);
         return null;
-        
     }  
 }
